@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar CRUD App</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="calendar-container">
+        <header>
+            <h2 id="monthDisplay"></h2>
+            <div>
+                <button id="backButton">Previous</button>
+                <button id="nextButton">Next</button>
+            </div>
+        </header>
+
+        <div id="weekdays">
+            <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+        </div>
+
+        <div id="calendar"></div>
+    </div>
+
+    <div id="eventModal" class="modal">
+        <div class="modal-content">
+            <h3 id="modalTitle">Add Event</h3>
+            <input type="text" id="eventTitleInput" placeholder="Event Title">
+            <div class="modal-buttons">
+                <button id="saveButton">Save</button>
+                <button id="deleteButton" class="danger">Delete</button>
+                <button id="closeButton">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/storage.js"></script>
+    <script src="assets/js/crud.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
